@@ -1,0 +1,21 @@
+Num::Name::AR::Damage Type::Weapon Class::Strength Req::Dex Req::MagicReq
+1::Bandit's Knife::56::Physical & Bleed::Dagger::6::12::0
+2::Balder Side Sword::80::Physical::Straight Sword::10::14::0
+3::Claymore::103::Physical::Greatsword::16::10::0
+4::Moonlight Greatsword::132::Magic::Greatsword::16::10::28
+5::Abyss Greatsword::160::Physical::Greatsword::22::18::18
+6::Demon Great Machete::133::Physical::Ultra Greatsword::40::0::0
+7::Shotel::82::Physical::Curved Sword::9::14::0
+8::Quelaag's Furysword::240::Physical & Fire::Curved Sword::11::13::0
+9::Gold Tracer::130::Physical & Bleed::Curved Sword::9::25::0
+10::Uchigatana::90::Physical & Bleed::Katana::14::14::0
+11::Velka's Rapier::166::Physical & Magic::Piercing Sword::8::16::16
+12::Crescent Axe::230::Physical & Magic::Axe::18::12::16
+13::Black Knight Greataxe::229::Physical::Great Axe::36::18::0
+14::Dragon Tooth::290::Physical::Great Hammer::40::0::0
+15::Smough's Hammer::300::Physical::Great Hammer::58::0::0
+16::Dragonslayer Spear::150::Physical & Lightning::Spear::24::24::0
+17::Channeler's Trident::174::Physical & Magic::Spear::16::16::24
+18::Notched Whip::76::Physical & Bleed::Whip::8::16::0
+19::Sorcerer's Catalyst::40::Magic::Catalyst::6::0::10
+20::Izalith Catalyst::40::Magic::Catalyst::6::0::14
