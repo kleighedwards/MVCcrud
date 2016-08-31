@@ -67,5 +67,16 @@ public class WeaponFileDAO implements WeaponDAO
 	{
 		return weapons.get(number);
 	}
-
+	
+	@Override
+	public void addWeapon(Weapon weapon)
+	{
+		weapons.add(weapon);
+	}
+	
+	@Override
+	public void removeWeapon(int number)
+	{
+		weapons.remove(number);
+	}
 }
