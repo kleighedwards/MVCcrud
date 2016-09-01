@@ -57,7 +57,7 @@ public class WeaponFileDAO implements WeaponDAO
 	}
 
 	@Override
-	public int getSelectedWeapon(String name) 
+	public int getSelectedInt(String name) 
 	{
 		Weapon w = null;
 		int num = 0;
@@ -75,7 +75,23 @@ public class WeaponFileDAO implements WeaponDAO
 			return num;
 	}
 	
-
+	@Override
+	public Weapon getSelectedWeapon(String name) 
+	{
+		Weapon w = null;
+		
+		for(Weapon weapon : weapons)
+		{
+			if (weapon.getName().equals(name))
+			{
+				w = weapon;
+				break;
+			}
+		}
+			
+			return w;
+	}
+	
 	@Override
 	public Weapon getWeaponByNumber(int number) 
 	{
@@ -89,8 +105,8 @@ public class WeaponFileDAO implements WeaponDAO
 	}
 	
 	@Override
-	public void removeWeapon(int number)
+	public void removeWeapon(Weapon weapon)
 	{
-		weapons.remove(number);
+		weapons.remove(weapon);
 	}
 }

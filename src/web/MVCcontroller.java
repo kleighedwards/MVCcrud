@@ -60,11 +60,33 @@ public class MVCcontroller
 	@RequestMapping(path="removeInventory.do", method=RequestMethod.POST)
 	public ModelAndView removeWeapon(@RequestParam("menu") String selected) 
 	{
-		int index = weaponDAO.getSelectedWeapon(selected);
-		weaponDAO.removeWeapon(index);
+		Weapon currentWeapon = weaponDAO.getSelectedWeapon(selected);
+		weaponDAO.removeWeapon(currentWeapon);
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("weaponList", weaponDAO.getWeapons());
 		mv.setViewName("view.jsp");
 		return mv;
 	}
+	
+	@RequestMapping("goToInfusion.do")
+	public ModelAndView goToInfusion()
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("weaponList", weaponDAO.getWeapons());
+		mv.setViewName("infusion.jsp");
+		return mv;
+	}
+	
+	@RequestMapping("Infusion.do")
+	public ModelAndView infuseWeapon(@RequestParam("menu") String selectedName,
+									 @RequestParam("damageType") String infusion)
+	{
+		Weapon currentWeapon = weaponDAO.getSelectedWeapon(selectedName);
+		currentWeapon.setDamageType(infusion);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("weaponList", weaponDAO.getWeapons());
+		mv.setViewName("view.jsp");
+		return mv;
+	}
+	
 }

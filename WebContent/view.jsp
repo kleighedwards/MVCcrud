@@ -47,6 +47,10 @@
 	<div>
 		<a href="dropDown.do">Remove Weapon from Inventory</a>
 	</div>
+	
+	<div>
+		<a href="goToInfusion.do">Infuse Weapon</a>
+	</div>
 
 </body>
 </html>
