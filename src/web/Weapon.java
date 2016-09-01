@@ -1,11 +1,12 @@
 package web;
 
+
 public class Weapon 
 {	
 	public static int id = 0;
 	private int number;
 	private String name;
-	private String attackRating;
+	private int attackRating;
 	private String damageType;
 	private String weaponClass;
 	private String strengthReq;
@@ -18,7 +19,7 @@ public class Weapon
 		//Update ID so Spring will see it when calling no-args constructor
 	}
 	
-	public Weapon(String name, String attackRating, String damageType, 
+	public Weapon(String name, int attackRating, String damageType, 
 				  String weaponClass, String strengthReq, String dexReq, String magicReq)
 	{
 		this.name = name;
@@ -52,12 +53,12 @@ public class Weapon
 		this.name = name;
 	}
 
-	public String getAttackRating() 
+	public int getAttackRating() 
 	{
 		return attackRating;
 	}
 
-	public void setAttackRating(String attackRating) 
+	public void setAttackRating(int attackRating) 
 	{
 		this.attackRating = attackRating;
 	}

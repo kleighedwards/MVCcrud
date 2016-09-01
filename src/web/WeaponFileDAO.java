@@ -32,7 +32,7 @@ public class WeaponFileDAO implements WeaponDAO
 				String[] tokens = line.split("::");
 				int number = Integer.parseInt(tokens[0]);
 				String name = tokens[1];
-				String attackRating = tokens[2];
+				int attackRating = Integer.parseInt(tokens[2]);
 				String damageType = tokens[3];
 				String weaponClass = tokens[4];
 				String strengthReq = tokens[5];
@@ -43,10 +43,6 @@ public class WeaponFileDAO implements WeaponDAO
 			}
 		} catch (Exception e) {
 			System.err.println(e);
-		}
-		
-		for (Weapon weapon : weapons) {
-			System.out.println(weapon);
 		}
 	}
 	

@@ -17,6 +17,7 @@
 				<td>Strength Requirement</td>
 				<td>Dexterity Requirement</td>
 				<td>Magic Requirement</td>
+				<td>Remove from Inventory</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -31,25 +32,27 @@
 				<td>${weapon.strengthReq}</td>
 				<td>${weapon.dexReq}</td>
 				<td>${weapon.magicReq}</td>
+				<td>
+					<form action="removeInventory.do" method="POST">
+						<input type="hidden" value="${weapon.name}" name="weapon"/>
+						<input type="submit" value="Remove"/>
+					</form>
+				</td>
 			</tr>
 		</c:forEach>
 		</tbody>
 	</table>
 	
-	<c:forEach var="weapon" items="${weaponList}">
-		<p>${weapon.number}</p>
-	</c:forEach>
-	
 	<div>
-		<a href="add.html">Add Weapon To Inventory</a>
-	</div>
-	
-	<div>
-		<a href="dropDown.do">Remove Weapon from Inventory</a>
+		<a href="goToAdd.do">Add Weapon To Inventory</a>
 	</div>
 	
 	<div>
 		<a href="goToInfusion.do">Infuse Weapon</a>
+	</div>
+	
+	<div>
+		<a href="goToReinforce.do">Reinforce Weapon</a>
 	</div>
 
 </body>
