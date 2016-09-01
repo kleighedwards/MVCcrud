@@ -32,13 +32,13 @@ public class WeaponFileDAO implements WeaponDAO
 				String[] tokens = line.split("::");
 				int number = Integer.parseInt(tokens[0]);
 				String name = tokens[1];
-				int attackRating = Integer.parseInt(tokens[2]);
+				String attackRating = tokens[2];
 				String damageType = tokens[3];
 				String weaponClass = tokens[4];
-				int strengthReq = Integer.parseInt(tokens[5]);
-				int dexReq = Integer.parseInt(tokens[6]);
-				int magicReq = Integer.parseInt(tokens[6]);
-				weapons.add(new Weapon(number, name, attackRating, damageType, weaponClass, 
+				String strengthReq = tokens[5];
+				String dexReq = tokens[6];
+				String magicReq = tokens[6];
+				weapons.add(new Weapon(name, attackRating, damageType, weaponClass, 
 							strengthReq, dexReq, magicReq));
 			}
 		} catch (Exception e) {
@@ -57,10 +57,24 @@ public class WeaponFileDAO implements WeaponDAO
 	}
 
 	@Override
-	public Weapon getSelectedWeapon(String name) 
+	public int getSelectedWeapon(String name) 
 	{
-		return null;
+		Weapon w = null;
+		int num = 0;
+		
+		for(Weapon weapon : weapons)
+		{
+			if (weapon.getName().equals(name))
+			{
+				w = weapon;
+				num = w.getNumber();
+				break;
+			}
+		}
+			
+			return num;
 	}
+	
 
 	@Override
 	public Weapon getWeaponByNumber(int number) 

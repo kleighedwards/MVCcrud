@@ -36,9 +36,17 @@
 		</tbody>
 	</table>
 	
+	<c:forEach var="weapon" items="${weaponList}">
+		<p>${weapon.number}</p>
+	</c:forEach>
+	
 	<div>
 		<a href="add.html">Add Weapon To Inventory</a>
 	</div>
 	
+	<div>
+		<a href="dropDown.do">Remove Weapon from Inventory</a>
+	</div>
+
 </body>
 </html>

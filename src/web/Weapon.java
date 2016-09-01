@@ -2,21 +2,25 @@ package web;
 
 public class Weapon 
 {	
+	public static int id = 0;
 	private int number;
 	private String name;
-	private int attackRating;
+	private String attackRating;
 	private String damageType;
 	private String weaponClass;
-	private int strengthReq;
-	private int dexReq;
-	private int magicReq;
+	private String strengthReq;
+	private String dexReq;
+	private String magicReq;
 	
-	public Weapon(){}
+	public Weapon(){
+		this.number = id;
+		id++;
+		//Update ID so Spring will see it when calling no-args constructor
+	}
 	
-	public Weapon(int number, String name, int attackRating, String damageType, 
-				  String weaponClass, int strengthReq, int dexReq, int magicReq)
+	public Weapon(String name, String attackRating, String damageType, 
+				  String weaponClass, String strengthReq, String dexReq, String magicReq)
 	{
-		this.number = number;
 		this.name = name;
 		this.attackRating = attackRating;
 		this.damageType = damageType;
@@ -24,6 +28,8 @@ public class Weapon
 		this.strengthReq = strengthReq;
 		this.dexReq = dexReq;
 		this.magicReq = magicReq;
+		this.number = id;
+		id++;
 	}
 	
 	public int getNumber() 
@@ -46,12 +52,12 @@ public class Weapon
 		this.name = name;
 	}
 
-	public int getAttackRating() 
+	public String getAttackRating() 
 	{
 		return attackRating;
 	}
 
-	public void setAttackRating(int attackRating) 
+	public void setAttackRating(String attackRating) 
 	{
 		this.attackRating = attackRating;
 	}
@@ -76,32 +82,32 @@ public class Weapon
 		this.weaponClass = weaponClass;
 	}
 
-	public int getStrengthReq() 
+	public String getStrengthReq() 
 	{
 		return strengthReq;
 	}
 
-	public void setStrengthReq(int strengthReq) 
+	public void setStrengthReq(String strengthReq) 
 	{
 		this.strengthReq = strengthReq;
 	}
 
-	public int getDexReq() 
+	public String getDexReq() 
 	{
 		return dexReq;
 	}
 
-	public void setDexReq(int dexReq) 
+	public void setDexReq(String dexReq) 
 	{
 		this.dexReq = dexReq;
 	}
 
-	public int getMagicReq() 
+	public String getMagicReq() 
 	{
 		return magicReq;
 	}
 
-	public void setMagicReq(int magicReq) 
+	public void setMagicReq(String magicReq) 
 	{
 		this.magicReq = magicReq;
 	}
