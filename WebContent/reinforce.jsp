@@ -3,22 +3,33 @@
 <html>
 <head>
 	<title>Reinforce Weapon</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 </head>
-<body>
+<body id="reinforcePage">
 
+	<ul>
+		<li><a href="Inventory.do">List All Weapons</a></li>
+	</ul>
+
+	<div class="infusionDiv">
+	
 	<h2>Reinforce Weapon</h2>
 	
 	<h3>Choose Your Weapon</h3>
 
-	<div class="weaponSelect">
+	<div class="form-group">
 		<form action="Reinforce.do" method="POST">
-			<select name="menu">
+			<select name="menu" class="form-control">
 				<c:forEach var="weapon" items="${weaponList}">
 				<option value="${weapon.name}">${weapon.name}</option>
 				</c:forEach>
 			</select>
-			<input type="submit" name="button" value="Reinforce Weapon"/><br>
+			<input class="removeButton" type="submit" name="button" value="Reinforce Weapon"/><br>
 		</form>
 	</div>
+	
+	</div>
+	
 </body>
 </html>

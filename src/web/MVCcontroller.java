@@ -17,6 +17,7 @@ public class MVCcontroller
 	@Autowired
 	private WeaponDAO weaponDAO;
 	
+	// Navigate to All Weapons
 	@RequestMapping("Inventory.do")
 	public ModelAndView listInventory()
 	{
@@ -27,6 +28,7 @@ public class MVCcontroller
 		return mv;	
 	}
 	
+	// Pass Information to Add Weapon
 	@RequestMapping("goToAdd.do")
 	public ModelAndView goToAdd()
 	{
@@ -50,6 +52,7 @@ public class MVCcontroller
 		return mv;
 	}
 	
+	// Remove Weapon from Inventory (From All Weapons)
 	@RequestMapping("removeInventory.do")
 	public ModelAndView removeWeapon(@RequestParam("weapon") String selected) 
 	{
@@ -61,6 +64,69 @@ public class MVCcontroller
 		return mv;
 	}
 	
+	// Remove Weapon from Inventory (From Filtered Lists)
+	@RequestMapping("removeSword.do")
+	public ModelAndView removeSword(@RequestParam("weapon") String selected) 
+	{
+		Weapon currentWeapon = weaponDAO.getSelectedWeapon(selected);
+		weaponDAO.removeWeapon(currentWeapon);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("swordList", weaponDAO.getSwords());
+		mv.setViewName("swords.jsp");
+		return mv;
+	}
+	@RequestMapping("removeAxe.do")
+	public ModelAndView removeAxe(@RequestParam("weapon") String selected) 
+	{
+		Weapon currentWeapon = weaponDAO.getSelectedWeapon(selected);
+		weaponDAO.removeWeapon(currentWeapon);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("axeList", weaponDAO.getAxes());
+		mv.setViewName("axes.jsp");
+		return mv;
+	}
+	@RequestMapping("removeSpear.do")
+	public ModelAndView removeSpear(@RequestParam("weapon") String selected) 
+	{
+		Weapon currentWeapon = weaponDAO.getSelectedWeapon(selected);
+		weaponDAO.removeWeapon(currentWeapon);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("spearList", weaponDAO.getSpears());
+		mv.setViewName("spears.jsp");
+		return mv;
+	}
+	@RequestMapping("removeWhip.do")
+	public ModelAndView removeWhip(@RequestParam("weapon") String selected) 
+	{
+		Weapon currentWeapon = weaponDAO.getSelectedWeapon(selected);
+		weaponDAO.removeWeapon(currentWeapon);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("whipList", weaponDAO.getWhips());
+		mv.setViewName("whips.jsp");
+		return mv;
+	}
+	@RequestMapping("removeBow.do")
+	public ModelAndView removeBow(@RequestParam("weapon") String selected) 
+	{
+		Weapon currentWeapon = weaponDAO.getSelectedWeapon(selected);
+		weaponDAO.removeWeapon(currentWeapon);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("bowList", weaponDAO.getBows());
+		mv.setViewName("bows.jsp");
+		return mv;
+	}
+	@RequestMapping("removeCatalyst.do")
+	public ModelAndView removeCatalyst(@RequestParam("weapon") String selected) 
+	{
+		Weapon currentWeapon = weaponDAO.getSelectedWeapon(selected);
+		weaponDAO.removeWeapon(currentWeapon);
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("catalystList", weaponDAO.getCatalysts());
+		mv.setViewName("catalysts.jsp");
+		return mv;
+	}
+	
+	// Pass Information to Weapon Infusion
 	@RequestMapping("goToInfusion.do")
 	public ModelAndView goToInfusion()
 	{
@@ -82,6 +148,7 @@ public class MVCcontroller
 		return mv;
 	}
 	
+	// Pass Information to Reinforce Weapon
 	@RequestMapping("goToReinforce.do")
 	public ModelAndView goToReinforce()
 	{
@@ -109,6 +176,55 @@ public class MVCcontroller
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("weaponList", weaponDAO.getWeapons());
 		mv.setViewName("view.jsp");
+		return mv;
+	}
+	
+	// Pass Information to Filtered Weapon Class jsp's
+	@RequestMapping("goToSwords.do")
+	public ModelAndView goToSwords()
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("swordList", weaponDAO.getSwords());
+		mv.setViewName("swords.jsp");
+		return mv;
+	}
+	@RequestMapping("goToAxes.do")
+	public ModelAndView goToAxes()
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("axeList", weaponDAO.getAxes());
+		mv.setViewName("axes.jsp");
+		return mv;
+	}
+	@RequestMapping("goToSpears.do")
+	public ModelAndView goToSpears()
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("spearList", weaponDAO.getSpears());
+		mv.setViewName("spears.jsp");
+		return mv;
+	}
+	@RequestMapping("goToWhips.do")
+	public ModelAndView goToWhips()
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("whipList", weaponDAO.getWhips());
+		mv.setViewName("whips.jsp");
+		return mv;
+	}@RequestMapping("goToBows.do")
+	public ModelAndView goToBows()
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("bowList", weaponDAO.getBows());
+		mv.setViewName("bows.jsp");
+		return mv;
+	}
+	@RequestMapping("goToCatalysts.do")
+	public ModelAndView goToCatalysts()
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("catalystList", weaponDAO.getCatalysts());
+		mv.setViewName("catalysts.jsp");
 		return mv;
 	}
 	

@@ -9,9 +9,6 @@ public class Weapon
 	private int attackRating;
 	private String damageType;
 	private String weaponClass;
-	private String strengthReq;
-	private String dexReq;
-	private String magicReq;
 	
 	public Weapon(){
 		this.number = id;
@@ -20,15 +17,12 @@ public class Weapon
 	}
 	
 	public Weapon(String name, int attackRating, String damageType, 
-				  String weaponClass, String strengthReq, String dexReq, String magicReq)
+				  String weaponClass)
 	{
 		this.name = name;
 		this.attackRating = attackRating;
 		this.damageType = damageType;
 		this.weaponClass = weaponClass;
-		this.strengthReq = strengthReq;
-		this.dexReq = dexReq;
-		this.magicReq = magicReq;
 		this.number = id;
 		id++;
 	}
@@ -83,42 +77,11 @@ public class Weapon
 		this.weaponClass = weaponClass;
 	}
 
-	public String getStrengthReq() 
-	{
-		return strengthReq;
-	}
-
-	public void setStrengthReq(String strengthReq) 
-	{
-		this.strengthReq = strengthReq;
-	}
-
-	public String getDexReq() 
-	{
-		return dexReq;
-	}
-
-	public void setDexReq(String dexReq) 
-	{
-		this.dexReq = dexReq;
-	}
-
-	public String getMagicReq() 
-	{
-		return magicReq;
-	}
-
-	public void setMagicReq(String magicReq) 
-	{
-		this.magicReq = magicReq;
-	}
-
 	@Override
 	public String toString() 
 	{
 		return "Weapon [name=" + name + ", attackRating=" + attackRating + ", damageType=" + damageType
-				+ ", weaponClass=" + weaponClass + ", strengthReq=" + strengthReq + ", dexReq=" + dexReq + ", magicReq="
-				+ magicReq + "]";
+				+ ", weaponClass=" + weaponClass + "]";
 	}
 
 }

@@ -1,5 +1,154 @@
 body
 {
-	background-image: url("DarkSoulspics/FireLink1.jpg"); 
-	background-color: #e5d8a3;
+	background-image: url("DarkSoulspics/FireLink1.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.viewTable
+{
+	opacity:1; 
+	filter:alpha(opacity=100); 
+	-moz-opacity:1; 
+	-khtml-opacity:1; 
+}
+
+#listWeapons
+{
+	background-image: url("DarkSoulspics/DarkSouls302.jpg"); 
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#infusionPage
+{
+	background-image: url("DarkSoulspics/DarkSouls304.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#reinforcePage
+{
+	background-image: url("DarkSoulspics/DarkSouls31.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#addWeapon
+{
+	background-image: url("DarkSoulspics/DarkSouls305.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#sortByClass
+{
+	background-image: url("DarkSoulspics/Firekeeper.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.weaponSelect
+{
+	color:white;
+}
+
+.infusionDiv
+{
+	background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#weaponClasses
+{
+	padding:150px;
+}
+
+#containerMain
+{
+	padding: 100px;
+}
+
+.tableDiv
+{
+	/* background-color: white;
+	opacity: 0.5; */
+	background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+table
+{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	position: relative;
+	padding: 0;
+	
+}
+
+td
+{
+	padding: 5px;
+}
+
+tr:hover
+{
+	background-color: #111;
+    text-decoration: none;
+    color: white;
+}
+
+.removeButton
+{
+	color: #111;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover
+{
+	background-color: #111;
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li 
+{
+    float: left;
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #111;
+    text-decoration: none;
+    color: white;
 }

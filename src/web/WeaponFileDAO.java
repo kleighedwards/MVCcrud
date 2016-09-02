@@ -35,11 +35,7 @@ public class WeaponFileDAO implements WeaponDAO
 				int attackRating = Integer.parseInt(tokens[2]);
 				String damageType = tokens[3];
 				String weaponClass = tokens[4];
-				String strengthReq = tokens[5];
-				String dexReq = tokens[6];
-				String magicReq = tokens[6];
-				weapons.add(new Weapon(name, attackRating, damageType, weaponClass, 
-							strengthReq, dexReq, magicReq));
+				weapons.add(new Weapon(name, attackRating, damageType, weaponClass));
 			}
 		} catch (Exception e) {
 			System.err.println(e);
@@ -104,5 +100,102 @@ public class WeaponFileDAO implements WeaponDAO
 	public void removeWeapon(Weapon weapon)
 	{
 		weapons.remove(weapon);
+	}
+	
+	public List<Weapon> getSwords()
+	{
+		List<Weapon> swords = new ArrayList<>();
+		for(Weapon weapon : weapons)
+		{
+			if (weapon.getWeaponClass().contains("Dagger"))
+			{
+				swords.add(weapon);
+			}
+			if (weapon.getWeaponClass().contains("Sword"))
+			{
+				swords.add(weapon);
+			}
+			if (weapon.getWeaponClass().contains("sword"))
+			{
+				swords.add(weapon);
+			}
+			
+		}
+		return swords;	
+	}
+	
+	public List<Weapon> getAxes()
+	{
+		List<Weapon> axes = new ArrayList<>();
+		for(Weapon weapon : weapons)
+		{
+			if (weapon.getWeaponClass().contains("Axe"))
+			{
+				axes.add(weapon);
+			}
+			if (weapon.getWeaponClass().contains("Hammer"))
+			{
+				axes.add(weapon);
+			}
+		}
+		return axes;	
+	}
+	
+	public List<Weapon> getSpears()
+	{
+		List<Weapon> spears = new ArrayList<>();
+		for(Weapon weapon : weapons)
+		{
+			if (weapon.getWeaponClass().contains("Spear"))
+			{
+				spears.add(weapon);
+			}
+			if (weapon.getWeaponClass().contains("Halberd"))
+			{
+				spears.add(weapon);
+			}
+			
+		}
+		return spears;	
+	}
+	
+	public List<Weapon> getWhips()
+	{
+		List<Weapon> whips = new ArrayList<>();
+		for(Weapon weapon : weapons)
+		{
+			if (weapon.getWeaponClass().contains("Whip"))
+			{
+				whips.add(weapon);
+			}
+		}
+		return whips;	
+	}
+	
+	public List<Weapon> getBows()
+	{
+		List<Weapon> bows = new ArrayList<>();
+		for(Weapon weapon : weapons)
+		{
+			if (weapon.getWeaponClass().contains("Bow"))
+			{
+				bows.add(weapon);
+			}
+		}
+		return bows;	
+	}
+	
+	public List<Weapon> getCatalysts()
+	{
+		List<Weapon> catalysts = new ArrayList<>();
+		for(Weapon weapon : weapons)
+		{
+			if (weapon.getWeaponClass().contains("Catalyst"))
+			{
+				catalysts.add(weapon);
+			}
+			
+		}
+		return catalysts;	
 	}
 }

@@ -2,12 +2,15 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-	<title>Andre's Smithy</title>
+	<title>Daggers and Swords</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 </head>
-<body id="listWeapons">
+<body>
+
 		<ul>
+			<li><a href="Inventory.do">List All Weapons</a>
+			
 			<li><a href="goToAdd.do">Add Weapon To Inventory</a></li>
 		
 			<li><a href="goToInfusion.do">Infuse Weapon</a></li>
@@ -19,10 +22,10 @@
 
 	<br>
 
-	<div class="tableDiv">
+<div class="tableDiv">
 
-	<h2>Your Inventory</h2>
-	
+	<h2>Daggars & Swords</h2>
+
 	<table>
 		<thead>
 			<tr>
@@ -35,16 +38,16 @@
 		</thead>
 		<tbody>
 		
-		<c:forEach var="weapon" items="${weaponList}">
+		<c:forEach var="sword" items="${swordList}">
 			
 			<tr>
-				<td>${weapon.name}</td>
-				<td>${weapon.attackRating}</td>
-				<td>${weapon.damageType}</td>
-				<td>${weapon.weaponClass}</td>
+				<td>${sword.name}</td>
+				<td>${sword.attackRating}</td>
+				<td>${sword.damageType}</td>
+				<td>${sword.weaponClass}</td>
 				<td>
-					<form class="removeButton" action="removeInventory.do" method="POST">
-						<input type="hidden" value="${weapon.name}" name="weapon"/>
+					<form class="removeButton" action="removeSword.do" method="POST">
+						<input type="hidden" value="${sword.name}" name="weapon"/>
 						<input type="submit" value="Remove"/>
 					</form>
 				</td>
@@ -52,8 +55,7 @@
 		</c:forEach>
 		</tbody>
 	</table>
-	
-	</div>
+</div>
 	<br>
 	
 </body>
