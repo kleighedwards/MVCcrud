@@ -13,17 +13,24 @@
 
 	<div class="infusionDiv">
 	<h2>Infusions</h2>
+	<br>
+	
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-6">
 	
 	<h3>Choose Your Weapon</h3>
-	<form action="Infusion.do" method="POST" class="form-horizontal">
-		<select name="menu">
+	<div class="form-group">
+		<form action="Infusion.do" method="POST">
+			<select name="menu" class="form-control">
 			<c:forEach var="weapon" items="${weaponList}">
 			<option value="${weapon.name}">${weapon.name}</option>
 			</c:forEach>
 		</select>
-		<br>
+	</div>
+	</div>
+	<div class="col-sm-6">
 		<h3>Choose Your Infusion</h3>
-		<!-- <input type="text" placeholder="Infusion" name="damageType"/> -->
 		<br>
 		<input type="checkbox" name="damageType" value="Physical"/>
 		Physical<br>
@@ -38,12 +45,17 @@
   		<input type="checkbox" name="damageType" value="Magic" />
   		Magic<br>
   		<input type="checkbox" name="damageType" value="Dark" />
-  		Dark<br>
-  		<br>
+  		Dark<br><br><br>
+ 	</div>
+ 	<div class="verticalcenter text-center">
 		<input class="removeButton" type="submit" name="button" value="Infuse Weapon"/><br>
 	
 	</form>
+	<br>
 	</div>
+	</div>
+	</div>
+	
 
 </body>
 </html>

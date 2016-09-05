@@ -19,10 +19,13 @@
 		</ul>
 		
 	
-
+	<br><br><br><br><br><br>
 	<div id="weaponClasses">
 
+	<div class="container">
 	<div class="row">
+	
+	<span class="weaponClassFont">
 
 		<div class="col-sm-4 col-md-4">
 			<a class="weaponSelect" href="goToSwords.do">Swords & Daggers</a>
@@ -33,10 +36,11 @@
 		<div class="col-sm-4 col-md-4">
 			<a class="weaponSelect" href="goToSpears.do">Spears & Halberds</a>
 		</div>
-		
+	</span>	
 	</div>
-	
+	<br><br><br>
 	<div class="row">
+	<span class="weaponClassFont">
 	
 		<div class="col-sm-4 col-md-4">		
 			<a class="weaponSelect" href="goToWhips.do">Whips</a>
@@ -48,6 +52,8 @@
 			<a class="weaponSelect" href="goToCatalysts.do">Catalysts</a>		
 		</div>
 	
+	</span>
+	</div>
 	</div>
 	</div>
 	

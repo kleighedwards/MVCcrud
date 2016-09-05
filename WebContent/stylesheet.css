@@ -6,6 +6,13 @@ body
     background-attachment: fixed; 
 }
 
+.pageOne
+{
+	font-size: 26px;
+	font-weight:bold;
+	font-family: Fantasy;
+}
+
 .viewTable
 {
 	opacity:1; 
@@ -46,6 +53,11 @@ body
     background-attachment: fixed;
 }
 
+.addForm
+{
+	color: #111;
+}
+
 #sortByClass
 {
 	background-image: url("DarkSoulspics/Firekeeper.jpg");
@@ -67,7 +79,13 @@ body
 
 #weaponClasses
 {
-	padding:150px;
+	padding:75px;
+} 
+
+.weaponClassFont
+{
+	font-size: 24px;
+	text-align: center;
 }
 
 #containerMain
@@ -151,4 +169,12 @@ li a:hover
     background-color: #111;
     text-decoration: none;
     color: white;
+}
+
+ 
+ .center-block 
+ {  
+  display: block;  
+  margin-right: auto;  
+  margin-left: auto;  
 }

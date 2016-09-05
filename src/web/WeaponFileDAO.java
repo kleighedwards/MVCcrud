@@ -119,6 +119,10 @@ public class WeaponFileDAO implements WeaponDAO
 			{
 				swords.add(weapon);
 			}
+			if (weapon.getWeaponClass().contains("Katana"))
+			{
+				swords.add(weapon);
+			}
 			
 		}
 		return swords;	

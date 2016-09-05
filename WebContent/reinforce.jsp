@@ -15,6 +15,11 @@
 	<div class="infusionDiv">
 	
 	<h2>Reinforce Weapon</h2>
+	<br>
+	
+	<div class="container">
+	<div class="row">
+	<div class="verticalcenter text-center">
 	
 	<h3>Choose Your Weapon</h3>
 
@@ -25,10 +30,15 @@
 				<option value="${weapon.name}">${weapon.name}</option>
 				</c:forEach>
 			</select>
+			<br>
+			<br>
 			<input class="removeButton" type="submit" name="button" value="Reinforce Weapon"/><br>
 		</form>
 	</div>
 	
+	</div>
+	</div>
+	</div>
 	</div>
 	
 </body>
