@@ -13,13 +13,6 @@ body
 	font-family: Fantasy;
 }
 
-.viewTable
-{
-	opacity:1; 
-	filter:alpha(opacity=100); 
-	-moz-opacity:1; 
-	-khtml-opacity:1; 
-}
 
 #listWeapons
 {
@@ -39,7 +32,7 @@ body
 
 #reinforcePage
 {
-	background-image: url("DarkSoulspics/DarkSouls31.jpg");
+	background-image: url("DarkSoulspics/DarkSouls3.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -47,7 +40,7 @@ body
 
 #addWeapon
 {
-	background-image: url("DarkSoulspics/DarkSouls305.jpg");
+	background-image: url("DarkSoulspics/DarkSouls3Iudex2.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -66,6 +59,53 @@ body
     background-attachment: fixed;
 }
 
+#spearsPage
+{
+	background-image: url("DarkSoulspics/DarkSouls3spear.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#swordsPage
+{
+	background-image: url("DarkSoulspics/DarkSouls3lothricknight.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#axesPage
+{
+	background-image: url("DarkSoulspics/DarkSouls3axe.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#bowsPage
+{
+	background-image: url("DarkSoulspics/DarkSouls3bow.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#whipsPage
+{
+	background-image: url("DarkSoulspics/DarkSouls31.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#catalystsPage
+{
+	background-image: url("DarkSoulspics/DarkSouls3magic.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .weaponSelect
 {
 	color:white;
@@ -169,12 +209,4 @@ li a:hover
     background-color: #111;
     text-decoration: none;
     color: white;
-}
-
- 
- .center-block 
- {  
-  display: block;  
-  margin-right: auto;  
-  margin-left: auto;  
 }

@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 </head>
-<body>
+<body id="bowsPage">
 
 		<ul>
 			<li><a href="Inventory.do">List All Weapons</a>
