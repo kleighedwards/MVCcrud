@@ -30,8 +30,10 @@
 		Set Base Damage<br>
 		<span class="addForm">
 		<form:input path="attackRating" placeholder="Base Damage"/>
-		<form:errors path="attackRating" placeholder="Base Damage"/><br>
 		</span>
+		<br>
+		<form:errors path="attackRating" placeholder="Base Damage"/><br>
+		<!-- </span> -->
 		<br>
 	</div>
 	<div class="col-sm-4">
