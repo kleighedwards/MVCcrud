@@ -30,3 +30,7 @@
     in my code. I would like to condense what I have into something more managable. 
     I feel this will also allow me to explore the additional functionality
     I mentioned in the previous section.
+
+### Access on AWS
+
+        http://52.34.37.216:8080/MVCcrud/
