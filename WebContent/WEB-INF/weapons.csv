@@ -1,31 +1,31 @@
-Num::Name::AR::Damage Type::Weapon Class
-1::Bandit's Knife::56::Physical & Bleed::Dagger
-2::Dark Silver Tracer::75::Physical::Dagger
-3::Balder Side Sword::80::Physical::Straight Sword
-4::Claymore::103::Physical::Greatsword
-5::Moonlight Greatsword::132::Magic::Greatsword
-6::Abyss Greatsword::160::Physical::Greatsword
-7::Demon Great Machete::133::Physical::Ultra Greatsword
-8::Shotel::82::Physical::Curved Sword
-9::Quelaag's Furysword::240::Physical & Fire::Curved Sword
-10::Gold Tracer::130::Physical & Bleed::Curved Sword
-11::Uchigatana::90::Physical & Bleed::Katana
-12::Chaos Blade::133::Physical & Bleed::Katana
-13::Velka's Rapier::166::Physical & Magic::Piercing Sword
-14::Crescent Axe::230::Physical & Magic::Axe
-15::Black Knight Greataxe::229::Physical::Great Axe
-16::Dragon King Greataxe::380::Physical::Great Axe
-17::Dragon Tooth::290::Physical::Great Hammer
-18::Smough's Hammer::300::Physical::Great Hammer
-19::Dragonslayer Spear::150::Physical & Lightning::Spear
-20::Channeler's Trident::174::Physical & Magic::Spear
-21::Four-pronged Plow::75::Physical::Spear
-22::Black Knight Halberd::245::Physical::Halberd
-23::Giant's Halberd::245::Physical & Lightning::Halberd
-24::Notched Whip::76::Physical & Bleed::Whip
-25::Guardian's Tail::84::Physical::Whip
-26::Black Bow of Pharis::34::Physical::Bow
-27::Darkmoon Bow::160::Physical & Magic::Bow
-28::Gough's Greatbow::85::Physical::Bow
-29::Sorcerer's Catalyst::40::Magic::Catalyst
-30::Izalith Catalyst::40::Magic::Catalyst
+Num,Name,AR,Damage Type,Weapon Class
+1,Bandit's Knife,56,Physical & Bleed,Dagger
+2,Dark Silver Tracer,75,Physical,Dagger
+3,Balder Side Sword,80,Physical,Straight Sword
+4,Claymore,103,Physical,Greatsword
+5,Moonlight Greatsword,132,Magic,Greatsword
+6,Abyss Greatsword,160,Physical,Greatsword
+7,Demon Great Machete,133,Physical,Ultra Greatsword
+8,Shotel,82,Physical,Curved Sword
+9,Quelaag's Furysword,240,Physical & Fire,Curved Sword
+10,Gold Tracer,130,Physical & Bleed,Curved Sword
+11,Uchigatana,90,Physical & Bleed,Katana
+12,Chaos Blade,133,Physical & Bleed,Katana
+13,Velka's Rapier,166,Physical & Magic,Piercing Sword
+14,Crescent Axe,230,Physical & Magic,Axe
+15,Black Knight Greataxe,229,Physical,Great Axe
+16,Dragon King Greataxe,380,Physical,Great Axe
+17,Dragon Tooth,290,Physical,Great Hammer
+18,Smough's Hammer,300,Physical,Great Hammer
+19,Dragonslayer Spear,150,Physical & Lightning,Spear
+20,Channeler's Trident,174,Physical & Magic,Spear
+21,Four-pronged Plow,75,Physical,Spear
+22,Black Knight Halberd,245,Physical,Halberd
+23,Giant's Halberd,245,Physical & Lightning,Halberd
+24,Notched Whip,76,Physical & Bleed,Whip
+25,Guardian's Tail,84,Physical,Whip
+26,Black Bow of Pharis,34,Physical,Bow
+27,Darkmoon Bow,160,Physical & Magic,Bow
+28,Gough's Greatbow,85,Physical,Bow
+29,Sorcerer's Catalyst,40,Magic,Catalyst
+30,Izalith Catalyst,40,Magic,Catalyst

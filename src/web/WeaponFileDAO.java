@@ -29,7 +29,7 @@ public class WeaponFileDAO implements WeaponDAO
 			) {
 			String line = buf.readLine();
 			while ((line = buf.readLine()) != null) {
-				String[] tokens = line.split("::");
+				String[] tokens = line.split(",");
 				int number = Integer.parseInt(tokens[0]);
 				String name = tokens[1];
 				int attackRating = Integer.parseInt(tokens[2]);
