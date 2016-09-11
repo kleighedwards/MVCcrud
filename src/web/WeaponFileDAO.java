@@ -202,4 +202,16 @@ public class WeaponFileDAO implements WeaponDAO
 		}
 		return catalysts;	
 	}
+
+	@Override
+	public void infuseWeapon(Weapon weapon) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reinforceWeapon(Weapon weapon) {
+		// TODO Auto-generated method stub
+		
+	}
 }

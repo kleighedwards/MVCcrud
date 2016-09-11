@@ -16,5 +16,7 @@ public interface WeaponDAO
 	public List<Weapon> getWhips();
 	public List<Weapon> getBows();
 	public List<Weapon> getCatalysts();
+	public void infuseWeapon(Weapon weapon);
+	public void reinforceWeapon(Weapon weapon);
 
 }
