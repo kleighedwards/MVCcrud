@@ -4,14 +4,14 @@
 
 
 ### Project Overview
-    -   Use Spring MVC to create a unique C.R.U.D. (Create, Read, Update, Delete) application. 
-    -   Update this program to function with a self-constructed database.
-    -   My application functions as a video game weapon inventory. 
-    -   The user is able to view the existing weapons in their inventory, create new weapons, or remove weapons they
-        no longer want. 
-    -   They may also modify their weapons by either "Infusing" them (changing the damage type of the weapon) or by            "Reinforcing" them (increasing the weapons base damage). 
-        -   Upon Reinforcing a weapon, the weapon's name will appear with a "Reinforced" lable preceeding the original         name. 
-    -   The user may also filter through their inventory by "Weapon Classes" (swords, spears, bows, and the like).
+-   Use Spring MVC to create a unique C.R.U.D. (Create, Read, Update, Delete) application. 
+-   Update this program to function with a self-constructed database.
+-   My application functions as a video game weapon inventory. 
+-   The user is able to view the existing weapons in their inventory, create new weapons, or remove weapons they
+    no longer want. 
+-   They may also modify their weapons by either "Infusing" them (changing the damage type of the weapon) or by                "Reinforcing" them (increasing the weapons base damage). 
+    -   Upon Reinforcing a weapon, the weapon's name will appear with a "Reinforced" lable preceeding the original             name. 
+-   The user may also filter through their inventory by "Weapon Classes" (swords, spears, bows, and the like).
     
 ### Goals Moving Forward
 Week 7:
