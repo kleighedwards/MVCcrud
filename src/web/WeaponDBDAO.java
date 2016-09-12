@@ -42,7 +42,6 @@ public class WeaponDBDAO implements WeaponDAO {
 			while (rs.next()) {
 
 				Weapon weapon = new Weapon(rs.getString(1), rs.getInt(2), rs.getString(3), rs.getString(4));
-				// weapon.setInfusions(getDamageTypes(rs.getString(3)));
 				weapons.add(weapon);
 
 			}
@@ -80,7 +79,6 @@ public class WeaponDBDAO implements WeaponDAO {
 
 			if (rs.next()) {
 				weapon = new Weapon(rs.getString(1), rs.getInt(2), rs.getString(3), rs.getString(4));
-				// weapon.setInfusions(getDamageTypes(weapon.getName()));
 			}
 			rs.close();
 			conn.close();
@@ -110,8 +108,8 @@ public class WeaponDBDAO implements WeaponDAO {
 			stmt.setString(1, weapon.getName());
 			stmt.setInt(2, weapon.getAttackRating());
 			stmt.setString(3, weapon.getDamageType());
+			
 			// Set weapon_class_id
-
 			// Set weapon_class_id for Swords and Daggers
 			if (weapon.getWeaponClass().contains("Dagger") || weapon.getWeaponClass().contains("Sword")
 					|| weapon.getWeaponClass().contains("sword") || weapon.getWeaponClass().contains("Katana")) {
@@ -201,30 +199,15 @@ public class WeaponDBDAO implements WeaponDAO {
 			int uc = stmt.executeUpdate();
 
 			if (uc == 1) {
-				System.out.println("DEBUG: WeaponDAO.addWeapon(): Weapon added: " + weapon);
+				System.out.println("Weapon added: " + weapon);
 				ResultSet keys = stmt.getGeneratedKeys();
 				int newWeaponId;
 				if (keys.next()) {
 					newWeaponId = keys.getInt(1);
-					System.out.println("Weapon added, id: " + newWeaponId);
-					// List<Infusion> infusions = weapon.getInfusions();
-					// if (infusions.size() > 0) {
-					// sqltxt = "INSERT INTO weapon_infusion (weapon_id,
-					// infusion_id) VALUES (?, ?)";
-					// stmt = conn.prepareStatement(sqltxt);
-					// for (Infusion infusion : infusions) {
-					// stmt.setInt(1, newWeaponId);
-					// stmt.setInt(2, infusion.getId());
-					// uc = stmt.executeUpdate();
-					// if (uc == 1)
-					// {
-					// System.out.println("Added infusion " + infusion);
-					// }
-					// }
-					// }
+					System.out.println("Weapon id: " + newWeaponId);
 				}
 			} else {
-				System.err.println("DEBUG: WEAPONDBDAO.addWeapon(): No weapon added.");
+				System.err.println("No weapon added.");
 			}
 
 			conn.close();
@@ -326,31 +309,6 @@ public class WeaponDBDAO implements WeaponDAO {
 		} catch (SQLException sqle) {
 			sqle.printStackTrace(System.err);
 		}
-	}
-	
-	// No Longer Implementing
-	private List<Infusion> getDamageTypes(String damageType) {
-		List<Infusion> infusions = null;
-		try {
-			Connection conn = DriverManager.getConnection(url, user, pword);
-			String sqltxt;
-			sqltxt = "SELECT infusion.infusion, weapon_infusion.infusion_id "
-					+ "FROM weapon JOIN weapon_infusion ON weapon.id = weapon_infusion.weapon_id "
-					+ "JOIN infusion ON weapon_infusion.infusion_id = infusion.id " + "WHERE weapon.id = ?";
-			PreparedStatement stmt = conn.prepareStatement(sqltxt);
-			stmt.setString(1, damageType);
-			ResultSet rs = stmt.executeQuery();
-			infusions = new ArrayList<>();
-			while (rs.next()) {
-				infusions.add(new Infusion(rs.getString(1)));
-			}
-			rs.close();
-			stmt.close();
-			conn.close();
-		} catch (SQLException sqle) {
-			sqle.printStackTrace(System.err);
-		}
-		return infusions;
 	}
 
 	@Override

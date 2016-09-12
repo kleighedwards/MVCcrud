@@ -205,13 +205,13 @@ public class WeaponFileDAO implements WeaponDAO
 
 	@Override
 	public void infuseWeapon(Weapon weapon) {
-		// TODO Auto-generated method stub
+		// New Method Not Used In Original Program
 		
 	}
 
 	@Override
 	public void reinforceWeapon(Weapon weapon) {
-		// TODO Auto-generated method stub
+		// New Method Not Used In Original Program
 		
 	}
 }

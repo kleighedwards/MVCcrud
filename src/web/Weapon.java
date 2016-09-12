@@ -1,7 +1,5 @@
 package web;
 
-import java.util.List;
-
 public class Weapon 
 {	
 	public static int id = 0;
@@ -10,22 +8,13 @@ public class Weapon
 	private int attackRating;
 	private String damageType;
 	private String weaponClass;
-	private List<Infusion> infusions;
+//	private List<Infusion> infusions;
 	
 	public Weapon(){
 		this.number = id;
 		id++;
 		//Update ID so Spring will see it when calling no-args constructor
 	}
-	
-//	public Weapon(String name, int attackRating, String weaponClass)
-//	{
-//		this.name = name;
-//		this.attackRating = attackRating;
-//		this.weaponClass = weaponClass;
-//		this.number = id;
-//		id++;
-//	}
 	
 	public Weapon(String name, int attackRating, String damageType, 
 				  String weaponClass)
@@ -37,17 +26,6 @@ public class Weapon
 		this.number = id;
 		id++;
 	}
-	
-//	public Weapon(String name, int attackRating, List<Infusion> infusions,
-//			String weaponClass)
-//	{
-//		this.name = name;
-//		this.attackRating = attackRating;
-//		this.infusions = infusions;
-//		this.weaponClass = weaponClass;
-//		this.number = id;
-//		id++;
-//	}
 	
 	public int getNumber() 
 	{
@@ -99,15 +77,15 @@ public class Weapon
 		this.weaponClass = weaponClass;
 	}
 
-	public List<Infusion> getInfusions() 
-	{
-		return infusions;
-	}
-
-	public void setInfusions(List<Infusion> infusions) 
-	{
-		this.infusions = infusions;
-	}
+//	public List<Infusion> getInfusions() 
+//	{
+//		return infusions;
+//	}
+//
+//	public void setInfusions(List<Infusion> infusions) 
+//	{
+//		this.infusions = infusions;
+//	}
 
 	@Override
 	public String toString() 

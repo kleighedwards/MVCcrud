@@ -40,10 +40,6 @@
 			<tr>
 				<td>${weapon.name}</td>
 				<td>${weapon.attackRating}</td>
-				<%-- <c:forEach var="infusion" items="${weapon.infusions}">
-					${infusions}
-				</td>
-				</c:forEach> --%>
 				<td>${weapon.damageType}</td>
 				<td>${weapon.weaponClass}</td>
 				<td>

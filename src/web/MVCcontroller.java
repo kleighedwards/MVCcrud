@@ -35,10 +35,7 @@ public class MVCcontroller
 		ModelAndView mv = new ModelAndView();
         mv.setViewName("add.jsp");
         	mv.addObject("weapon", new Weapon());
-        	// get list of infusions from dao, add to mv
-        	// get list of weapon types from dao,add to mv
-        	// List<Infusion> infList= weaponDao.getInfusions()
-        	// mv.addObject("infusionList", infList);
+      
         return mv;
 	}
 	
@@ -170,16 +167,6 @@ public class MVCcontroller
 	{
 		Weapon currentWeapon = weaponDAO.getSelectedWeapon(selectedName);
 		weaponDAO.reinforceWeapon(currentWeapon);
-//		if (currentWeapon.getName().contains("Reinforced"))
-//		{
-//			currentWeapon.setAttackRating(currentWeapon.getAttackRating() + 100);
-//		}
-//		
-//		if (!currentWeapon.getName().contains("Reinforced"))
-//		{
-//			currentWeapon.setName("Reinforced " + currentWeapon.getName());
-//			currentWeapon.setAttackRating(currentWeapon.getAttackRating() + 100);
-//		}
 
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("weaponList", weaponDAO.getWeapons());

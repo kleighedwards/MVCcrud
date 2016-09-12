@@ -38,12 +38,6 @@
 	</div>
 	<div class="col-sm-4">
 	Damage Type:<br>
-	
-	<%-- <c:forEach var="infusion" items="infusionList">
-		<input type="checkbox" name="damageType" value="${infusion.name }"/>
-	${infusion.name}<br>
-	</c:forEach> --%>
-	
 	<input type="checkbox" name="damageType" value="Physical"/>
 	Physical<br>
 	<input type="checkbox" name="damageType" value="Bleed"/>

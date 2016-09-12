@@ -1,3 +1,4 @@
+//No Longer Implementing This Class
 package web;
 
 public class Infusion 
@@ -46,6 +47,4 @@ public class Infusion
 	{
 		return infusion;
 	}
-	
-	
 }
