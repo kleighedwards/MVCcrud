@@ -12,8 +12,8 @@ import java.util.List;
 public class WeaponDBDAO implements WeaponDAO {
 	private static String url = "jdbc:mysql://localhost:3306/weaponinventory";
 
-	private static final String user = "root";
-	private static String pword = "root";
+	private static final String user = "weaponuser";
+	private static String pword = "weaponuser";
 
 	public WeaponDBDAO() {
 		try {
