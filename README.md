@@ -40,6 +40,6 @@ to modify my code to accomodate this more involved database design forced me to 
 a good portion of my code. I ultimately decided to abandon this model and simplify it to 
 something that worked better with my program's structure.
 
-### Access on AWS
+### Access This Program On AWS
 
 -    http://52.34.37.216:8080/MVCcrud/
